@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:menu="http:///menu.ecore" xmlns:menu.item="http:///menu/item.ecore" xmlns:org.eclipse.uml2._2._0._0.uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="menu" ecore:package="menu" org.eclipse.uml2._2._0._0.uml:originalName="Menu" targetNamespace="http:///menu.ecore">
+  <xsd:import namespace="http:///menu/item.ecore" schemaLocation="menu.item.xsd"/>
+  <xsd:element ecore:ignore="true" name="Menu" type="menu:Menu"/>
+  <xsd:complexType name="Menu">
+    <xsd:sequence>
+      <xsd:element ecore:ordered="false" ecore:resolveProxies="true" maxOccurs="unbounded" minOccurs="0" name="item" type="menu.item:Item"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

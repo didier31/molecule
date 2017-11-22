@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:menu="http:///menu.ecore" xmlns:menu.item="http:///menu/item.ecore" xmlns:org.eclipse.uml2._2._0._0.uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="menu.item" ecore:package="menu.item" org.eclipse.uml2._2._0._0.uml:originalName="Item" targetNamespace="http:///menu/item.ecore">
+  <xsd:import namespace="http:///menu.ecore" schemaLocation="menu.xsd"/>
+  <xsd:element ecore:ignore="true" name="Item" type="menu.item:Item"/>
+  <xsd:complexType name="Item">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="menu" type="menu:Menu"/>
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:ID" use="required"/>
+    <xsd:attribute name="label" type="xsd:Name" use="required"/>
+  </xsd:complexType>
+</xsd:schema>

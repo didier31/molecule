@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu:Menu xmlns:menu="http:///menu.ecore" xmlns:menu.item="http:///menu/item.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http:///menu.ecore menu.xsd ">
+	<item label="File" id="file">
+		<menu>
+			<item label="New..." id="idvalue0"></item>
+			<item label="Load" id="load"></item>
+			<item label="Save" id="save"></item>
+			<item label="Exit" id="exit"></item></menu></item>
+	<item label="Edit" id="edit"></item></menu:Menu>

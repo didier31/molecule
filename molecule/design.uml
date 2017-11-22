@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zdNKMMmBEeec_oMaDElieg" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_GN3ucMykEeek-9f7YSXG1A" name="Extension points">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JYq4cM1SEeeZCMffKgKe1g" name="Menu">
+      <packagedElement xmi:type="uml:Association" xmi:id="_19CncMynEeek-9f7YSXG1A" memberEnd="_19IHAMynEeek-9f7YSXG1A _19ONoMynEeek-9f7YSXG1A">
+        <eAnnotations xmi:id="_19GR0MynEeek-9f7YSXG1A" source="org.eclipse.papyrus">
+          <details xmi:id="_19Hf8MynEeek-9f7YSXG1A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:id="_19ONoMynEeek-9f7YSXG1A" type="_8lHPAMykEeek-9f7YSXG1A" association="_19CncMynEeek-9f7YSXG1A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rfvCcMykEeek-9f7YSXG1A" name="Menu">
+        <ownedAttribute xmi:id="_AfmHkMylEeek-9f7YSXG1A" name="item" type="_8lHPAMykEeek-9f7YSXG1A" aggregation="composite" association="_AfXeEMylEeek-9f7YSXG1A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nuaQcMylEeek-9f7YSXG1A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nvZH4MylEeek-9f7YSXG1A" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_BuCIAM1SEeeZCMffKgKe1g" name="Item">
+        <packagedElement xmi:type="uml:Class" xmi:id="_8lHPAMykEeek-9f7YSXG1A" name="Item">
+          <ownedAttribute xmi:id="_19IHAMynEeek-9f7YSXG1A" name="menu" type="_rfvCcMykEeek-9f7YSXG1A" aggregation="composite" association="_19CncMynEeek-9f7YSXG1A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XhEF0MyqEeek-9f7YSXG1A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XhtmEMyqEeek-9f7YSXG1A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_gpgpUMywEeek-9f7YSXG1A" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#ID"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_1o9-cMyzEeek-9f7YSXG1A" name="label">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Name"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_AfXeEMylEeek-9f7YSXG1A" memberEnd="_AfmHkMylEeek-9f7YSXG1A _Afoj0MylEeek-9f7YSXG1A">
+          <eAnnotations xmi:id="_AfeLwMylEeek-9f7YSXG1A" source="org.eclipse.papyrus">
+            <details xmi:id="_AffZ4MylEeek-9f7YSXG1A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:id="_Afoj0MylEeek-9f7YSXG1A" name="menu" type="_rfvCcMykEeek-9f7YSXG1A" association="_AfXeEMylEeek-9f7YSXG1A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CDOoEMymEeek-9f7YSXG1A" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CGXboMymEeek-9f7YSXG1A" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
